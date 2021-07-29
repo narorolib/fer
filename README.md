@@ -84,5 +84,4 @@ GET https://api.fer.ee/currencies
 ```
 
 
-###### The Fer API is ~~almost~~ entirely borrowed from [Frankfurter](https://www.frankfurter.app/)'s simple and straightforward API design. 
-###### If you prefer to self-host, you should go to [Frankfurter's documentation](https://www.frankfurter.app/docs/) for details.
+###### The Fer API is ~~almost~~ entirely borrowed from [Frankfurter](https://www.frankfurter.app/)'s simple and straightforward API design. If you prefer to self-host, you should go to [Frankfurter's documentation](https://www.frankfurter.app/docs/) for details.
