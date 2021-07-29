@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>The most reliable foreign Fer with unparalleled performance (probably). - Fer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fer is a free API that tracks current and historical foreign exchange rates published by the European Central Bank">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.1.0/styles/tomorrow-night-blue.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="speedometer" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+        <symbol id="collection" viewBox="0 0 16 16">
+          <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+        </symbol>
+      </svg>
+<div class="container px-5">
+        <header class="d-flex flex-wrap align-items-start justify-content-center justify-content-md-between py-3 pt-5 mb-4">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+           <svg width="100" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="-5.713%" y1="42.506%" x2="109.28%" y2="57.661%" id="a"><stop stop-color="#0B2E55" offset="0%"/><stop stop-color="#60C3FF" offset="100%"/></linearGradient><linearGradient x1="9.17%" y1="43.875%" x2="97.127%" y2="56.125%" id="c"><stop stop-color="#E6E2D1" offset="0%"/><stop stop-color="#CCC2A7" offset="100%"/></linearGradient><path d="M47.903 170c2.06 0 7.578-.444 7.544-1.417-.023-.648-.023-4.034 0-10.158 6.282-.11 10.038-.234 11.27-.373 1.845-.208 2.524-3.24 2.524-4.722 0-1.482-.287-4.286-1.885-4.286-1.6 0-7.184-.125-11.91.07v-3.543l13.242-.178c.533 0 1.468-.643 1.806-1.93.337-1.285.506-2.048.506-4.506 0-2.46-.5-3.151-1.62-3.689-.745-.358-7.336-.358-19.771 0-2.559 0-4.3.18-5.223.538-.924.358-1.386.96-1.386 1.807v30.97c0 .489.302.847.906 1.075.604.228 1.936.342 3.997.342zm53.352 0c1.465 0 1.94-.59 2.263-1.768.322-1.179.483-1.798.483-4.09 0-2.291-.876-3.437-1.628-3.437-2.363 0-8.685-.08-15.33-.031v-3.313l12.162-.026c.644 0 1.654-.532 2.03-1.596.376-1.064.564-2.235.564-4.297 0-2.063-.983-3.094-1.95-3.094-1.611 0-7.626-.223-12.806-.152v-3.736c6.889-.13 11.875-.032 14.202-.032.537 0 1.467-.597 1.79-1.792.322-1.195.483-1.814.483-4.09 0-2.275-.554-3.144-1.628-3.412-.716-.179-7.913-.179-21.59 0-2.184 0-3.697.18-4.538.54-.841.36-1.262.966-1.262 1.817v31.085c0 .49.304.85.913 1.08.609.23 1.79.344 3.545.344h22.297zm25.633-35l.08.001c1.031.017 2.247.073 3.646.17 1.4.098 2.51.26 3.333.487.822.227 4.053 1.842 5.803 4.342 1.75 2.5 2.25 6.75 1.25 10.25s-3 5.5-3.035 6.178c-.036.68 5.035 9.6 5.035 11.188 0 1.59-1.538 2.384-8.43 2.384-1.995 0-3.377-.081-4.146-.243-.77-.163-1.26-.52-1.47-1.07l-3.411-9.52-4.232-.05c.014 2.632.022 4.719.024 6.261v.903c-.002 1.313-.01 2.083-.024 2.308-.048.748-1.067.762-3.201 1.022-2.135.26-3.287.389-4.998.389-1.71 0-3.534-.114-4.146-.34-.612-.228-.918-.584-.918-1.07-.025-7.72-.04-14.045-.045-18.974l-.001-.787v-5.982-.804c.006-3.194.021-4.992.046-5.394.089-1.478 5.29-1.576 7.922-1.583h.705c2.102-.004 7.12-.055 9.324-.065h.889zm.437 7.876h-6.502v8h6.135c2.03 0 3.044-1.379 3.044-4.137 0-1.41-.271-2.407-.814-2.989-.542-.582-1.163-.874-1.863-.874z" id="b"/></defs><g transform="translate(-43 -135)" fill-rule="nonzero" fill="none"><use fill="url(#a)" xlink:href="#b"/><use fill="url(#c)" style="mix-blend-mode:overlay" xlink:href="#b"/></g></svg>
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="https://stats.uptimerobot.com/O96K7sA7vX" class="nav-link px-2 link-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(77, 190, 83);"><path d="M20 12a2 2 0 0 0-.703.133l-2.398-1.963c.059-.214.101-.436.101-.67C17 8.114 15.886 7 14.5 7S12 8.114 12 9.5c0 .396.1.765.262 1.097l-2.909 3.438A2.06 2.06 0 0 0 9 14c-.179 0-.348.03-.512.074l-2.563-2.563C5.97 11.348 6 11.179 6 11c0-1.108-.892-2-2-2s-2 .892-2 2 .892 2 2 2c.179 0 .348-.03.512-.074l2.563 2.563A1.906 1.906 0 0 0 7 16c0 1.108.892 2 2 2s2-.892 2-2c0-.237-.048-.46-.123-.671l2.913-3.442c.227.066.462.113.71.113a2.48 2.48 0 0 0 1.133-.281l2.399 1.963A2.077 2.077 0 0 0 18 14c0 1.108.892 2 2 2s2-.892 2-2-.892-2-2-2z"></path></svg>Status</a></li>
+            <li><a href="#" class="nav-link px-2 link-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(32, 70, 128);"><path d="M5 2h2v3H5zm4 0h2v3H9zm4 0h2v3h-2zm6 7h-2V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3h2c1.103 0 2-.897 2-2v-5c0-1.103-.897-2-2-2zm-2 7v-5h2l.002 5H17z"></path></svg>Support Fer</a></li>
+          </ul>
+        </header>
+
+<main>
+    <section class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto text-left">
+            <h1 class="probably">The most reliable foreign exchange rates API with unparalleled performance (probably).</h1>
+            <p class="lead text-muted">Fer is a free API service that tracks current and historical foreign exchange rates published by the European Central Bank.</p>
+          </div>
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <pre>
+              <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest HTTP/1.1
+
+{
+  "amount":1.0,
+  "base":"EUR",
+  "date":"2021-07-28",
+  "rates":{
+    "AUD":1.6081,
+    "CAD":1.484,
+    "CHF":1.0802,
+    "CNY":7.6722,
+    "DKK":7.4373,
+    "GBP":0.85095,
+    "HKD":9.188,
+    "JPY":129.97,
+    "USD":1.1807,
+    ...
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+
+    <div class="container py-3" id="features">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1.7em" height="1.7em"><use xlink:href="#speedometer"/></svg>
+            </div>
+            <div>
+              <h2 class="fw-bolder">Blazing Fast & Reliable</h2>
+              <p class="text-muted">Fer has been designed and tested to handle thousands of request per second. Also constantly monitored.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1.7em" height="1.7em"><use xlink:href="#collection"/></svg>
+            </div>
+            <div>
+              <h2 class="fw-bolder">Trusted Sources</h2>
+              <p class="text-muted">Currency data delivered are sourced from financial data providers and banks, including the European Central Bank.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-dark flex-shrink-0 me-3">
+              <svg class="bi" width="1.7em" height="1.7em"><use xlink:href="#grid"/></svg>
+            </div>
+            <div>
+              <h2 class="fw-bolder">High-performance API</h2>
+              <p class="text-muted">The Fer API comes with guaranteed availability and responds within milliseconds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h4 class="fw-bolder">Getting Started</h4>
+
+          <p class="text-muted">
+            Get the latest foreign exchange rates.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Rates are quoted against the Euro by default. You can quote against a different currency by setting the <span class="badge bg-warning">from</span> or <span class="badge bg-warning">base</span> parameter.
+          </p>
+
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest?from=USD HTTP/1.1
+            </code>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest?base=USD HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Request specific exchange rates by setting the <span class="badge bg-warning">to</span> or <span class="badge bg-warning">symbols</span> parameter in your request to limits returned rates to specified values.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest?to=USD,JPY HTTP/1.1
+            </code>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest?symbols=USD,JPY HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Get historical rates for any day since 1999, using <span class="badge bg-warning">yyyy-mm-dd</span> format when querying.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-12-30 HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Get rates for a period.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-01-01..2010-01-31 HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Limit results to specific foreign exchange rates with the <span class="badge bg-warning">to</span> or <span class="badge bg-warning">symbols</span> parameter.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-12-30?to=USD,JPY HTTP/1.1
+            </code>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-12-30?symbols=USD,JPY HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Quote the historical rates against a different currency with the <span class="badge bg-warning">from</span> or <span class="badge bg-warning">base</span> parameter.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-01-01..2010-01-31?from=USD HTTP/1.1
+            </code>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/1999-01-01..2010-01-31?base=USD HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">Fer returns all data points for up to 90 days. Beyond this period, it starts sampling by week or month based on the breadth of the date range.</p>
+          
+          <p class="text-muted">
+            You can convert any value between currencies using the above endpoints in combination with the amount parameter.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/latest?amount=100&from=USD&to=CNY HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Get a list of available currency symbols and their full names.
+          </p>
+          <pre>
+            <code class="http px-5 mx-auto d-block rounded">
+GET https://api.fer.ee/currencies HTTP/1.1
+            </code>
+          </pre>
+
+          <p class="text-muted">
+            Please cache the results whenever possible, this will allow us to serve without any rate limits or api key requirements.
+          </p>
+          <p class="text-muted">
+            We <span class="text-decoration-line-through">will</span> may do our best to keep the service operating smoothly.
+          </p>
+        </div>
+      </div>
+    </div>
+</main>
+
+<footer class="pt-4 my-5 pt-5 py-5 align-items-center justify-content-center justify-content-md-between">
+    <div class="row ">
+      <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1 mt-3">
+        <svg width="100" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="-5.713%" y1="42.506%" x2="109.28%" y2="57.661%" id="a"><stop stop-color="#0B2E55" offset="0%"/><stop stop-color="#60C3FF" offset="100%"/></linearGradient><linearGradient x1="9.17%" y1="43.875%" x2="97.127%" y2="56.125%" id="c"><stop stop-color="#E6E2D1" offset="0%"/><stop stop-color="#CCC2A7" offset="100%"/></linearGradient><path d="M47.903 170c2.06 0 7.578-.444 7.544-1.417-.023-.648-.023-4.034 0-10.158 6.282-.11 10.038-.234 11.27-.373 1.845-.208 2.524-3.24 2.524-4.722 0-1.482-.287-4.286-1.885-4.286-1.6 0-7.184-.125-11.91.07v-3.543l13.242-.178c.533 0 1.468-.643 1.806-1.93.337-1.285.506-2.048.506-4.506 0-2.46-.5-3.151-1.62-3.689-.745-.358-7.336-.358-19.771 0-2.559 0-4.3.18-5.223.538-.924.358-1.386.96-1.386 1.807v30.97c0 .489.302.847.906 1.075.604.228 1.936.342 3.997.342zm53.352 0c1.465 0 1.94-.59 2.263-1.768.322-1.179.483-1.798.483-4.09 0-2.291-.876-3.437-1.628-3.437-2.363 0-8.685-.08-15.33-.031v-3.313l12.162-.026c.644 0 1.654-.532 2.03-1.596.376-1.064.564-2.235.564-4.297 0-2.063-.983-3.094-1.95-3.094-1.611 0-7.626-.223-12.806-.152v-3.736c6.889-.13 11.875-.032 14.202-.032.537 0 1.467-.597 1.79-1.792.322-1.195.483-1.814.483-4.09 0-2.275-.554-3.144-1.628-3.412-.716-.179-7.913-.179-21.59 0-2.184 0-3.697.18-4.538.54-.841.36-1.262.966-1.262 1.817v31.085c0 .49.304.85.913 1.08.609.23 1.79.344 3.545.344h22.297zm25.633-35l.08.001c1.031.017 2.247.073 3.646.17 1.4.098 2.51.26 3.333.487.822.227 4.053 1.842 5.803 4.342 1.75 2.5 2.25 6.75 1.25 10.25s-3 5.5-3.035 6.178c-.036.68 5.035 9.6 5.035 11.188 0 1.59-1.538 2.384-8.43 2.384-1.995 0-3.377-.081-4.146-.243-.77-.163-1.26-.52-1.47-1.07l-3.411-9.52-4.232-.05c.014 2.632.022 4.719.024 6.261v.903c-.002 1.313-.01 2.083-.024 2.308-.048.748-1.067.762-3.201 1.022-2.135.26-3.287.389-4.998.389-1.71 0-3.534-.114-4.146-.34-.612-.228-.918-.584-.918-1.07-.025-7.72-.04-14.045-.045-18.974l-.001-.787v-5.982-.804c.006-3.194.021-4.992.046-5.394.089-1.478 5.29-1.576 7.922-1.583h.705c2.102-.004 7.12-.055 9.324-.065h.889zm.437 7.876h-6.502v8h6.135c2.03 0 3.044-1.379 3.044-4.137 0-1.41-.271-2.407-.814-2.989-.542-.582-1.163-.874-1.863-.874z" id="b"/></defs><g transform="translate(-43 -135)" fill-rule="nonzero" fill="none"><use fill="url(#a)" xlink:href="#b"/><use fill="url(#c)" style="mix-blend-mode:overlay" xlink:href="#b"/></g></svg>
+        <small class="d-block my-3 text-muted">&copy; 2021</small>
+      </div>
+      <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1 mt-3">
+        <h5>General</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/emperorjoker/fer/issues"><span class="badge rounded-pill bg-secondary">Submit a Question or Bug &#x2197;</span></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1 mt-3">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/emperorjoker/fer">Github repository &#x2197;</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1 mt-3">
+        <h5>About</h5>
+        <p class="d-block text-muted">Made with ❤️‍🔥 on the beautiful Earth.</p>
+        <small class="d-block text-muted">Fer doesn't track you.</small>
+
+      </div>
+    </div>
+</footer>
+</div>
+    <!-- Highlight.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.1.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.1.0/languages/http.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+
+</body>
+</html>
