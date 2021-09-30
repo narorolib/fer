@@ -1,4 +1,4 @@
-# Fer
+![Fer](https://raw.githubusercontent.com/narorolib/fer/main/static/img/logo.svg)
 
 [Fer](https://fer.ee) is a free API service that tracks current and historical foreign exchange rates [published by the European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html).
 
